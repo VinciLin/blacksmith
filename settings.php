@@ -16,9 +16,9 @@ define('SETTINGS', [
     'sell_max' => 2
   ],
   'sword' => [
-    'wood' => 1, 
-    'ore' => 3, 
-    'sell_min' => 12, 
+    'wood' => 1,
+    'ore' => 3,
+    'sell_min' => 12,
     'sell_max' => 20
   ],
   'axe' => [

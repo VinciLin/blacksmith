@@ -1,3 +1,8 @@
+<?php
+  require 'settings.php';
+  require 'blacksmith.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +15,13 @@
 <body>
   <h1>Blacksmith</h1>
   <div id="response" class="response">
+    <!-- do not change begin -->
   <?php if (isset($_SESSION['blacksmith']['response'])): ?>
       <?php echo getResponse(); ?>
     <?php else: ?> 
       <?php echo updateResponse(help()); ?>
     <?php endif; ?>
+    <!-- do not change end -->
   </div>
   <form method="post">
     <input type="text" name="command" class="action">
